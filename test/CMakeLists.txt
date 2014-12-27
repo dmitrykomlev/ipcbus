@@ -4,7 +4,7 @@ include_directories(${CMAKE_SOURCE_DIR}/${IPC_BUS_PROJECT_NAME}/include)
 
 link_directories(${CMAKE_SOURCE_DIR}/IPC_BUS_PROJECT_NAME/src)
 
-set(SOURCE_TEST test.cpp )
+set(SOURCE_TEST test.cpp construct_test.cpp )
 
 add_executable(${IPC_BUS_TEST_PROJECT_NAME} ${SOURCE_TEST})
 

@@ -1,5 +1,4 @@
-#include "mock.h"
-int main(int argc, char** argv)
-{
-	return mock();
-}
+#define BOOST_TEST_MAIN 1
+#include <boost/test/unit_test.hpp>
+
+

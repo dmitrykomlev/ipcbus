@@ -12,13 +12,13 @@ set(Boost_DEBUG 1)
 SET(Boost_USE_STATIC_LIBS ON)
 SET(Boost_USE_STATIC_RUNTIME ON)
 
-find_package(Boost 1.52.0 COMPONENTS filesystem system )
+find_package(Boost 1.52.0 COMPONENTS filesystem system unit_test_framework REQUIRED)
 if(NOT Boost_FOUND)
     message(SEND_ERROR "Failed to find boost libraries.")
     return()
 else()
     INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIRS})
-	LINK_DIRECTORIES(${LINK_DIRECTORIES} ${Boost_LIBRARY_DIRS})
+    LINK_DIRECTORIES(${LINK_DIRECTORIES} ${Boost_LIBRARY_DIRS})
 endif()
 
 
