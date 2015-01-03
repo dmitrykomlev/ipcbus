@@ -5,7 +5,7 @@ SET(IPC_BUS_PROJECT_NAME ipcbus)
 SET(IPC_BUS_TEST_PROJECT_NAME test)
 project(${IPC_BUS_PROJECT_NAME})
 
-SET( CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -std=c++11 -Wall" )
+SET( CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -std=c++1y -Wall -pthread" )
 
 #boost
 set(Boost_DEBUG 1) 

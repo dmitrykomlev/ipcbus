@@ -19,4 +19,14 @@ Bus::~Bus()
 {
 }
 
+void Bus::power_on()
+{
+    _pimpl->power_on();
+}
+
+void Bus::power_off()
+{
+   _pimpl->power_off();
+}
+
 
